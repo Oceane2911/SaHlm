@@ -555,7 +555,7 @@ Puis:
               },
               lexique: {
                 titre: `Lexique`,
-                descriptif: `-Art = article
+                descriptif: ` -Art = article
                 -CAARUD = Centre d’Accueil et d’Accompagnement à la Réduction des risques pour Usagers de Drogues
                 -CMP = Centre Médico-Psychologique
                 -DSU = Développement Social et Urbain
