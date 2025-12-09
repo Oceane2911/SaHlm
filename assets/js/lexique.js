@@ -1,6 +1,7 @@
 import { displayInfo } from "./fonction.js";
 var infos = displayInfo("Axe_II", "I", "e");
 const div = document.getElementById("h1");
+const context = document.getElementById("lexique")
 if (infos) {
   const [axe, section, objet] = infos;
 
@@ -15,14 +16,14 @@ if (infos) {
   const resultat = lexique.split(" -").map((part) => part.trim());
   console.log(resultat);
 
-  for (let i = 0; i < resultat.length; i++) {
+  for (let i = 1; i < resultat.length; i++) {
     const word = document.createElement("div");
     word.classList.add("lexique");
 
     const lex = document.createElement("p");
     lex.textContent = resultat[i];
     word.appendChild(lex);
-    document.body.appendChild(word);
+    context.appendChild(word);
   }
 } else {
   console.log("Aucune information trouvée ou une erreur est survenue.");
