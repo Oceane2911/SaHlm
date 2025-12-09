@@ -83,6 +83,11 @@
   height: auto;
   padding: 6px;  /* zone cliquable plus grande */
 }
+@media (min-width: 600px) {
+  #h1 .back img{
+    display: none;
+  }
+}
 
 @media (min-width: 900px) {
   .accordeon .item {
